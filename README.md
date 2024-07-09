@@ -3,11 +3,12 @@
 This project was created by team MHAF as a part of our University project, where we're focusing on a secure DevSecOps deployment.
 #MHAF: M = Med Ali Mellah, H = Hyba Ayeshi, A = Ala Eddine Largat, F = Fyras Mabrouki
 
-## Project Name: DevSecOps Security Suite
-
 ### Description
 
 DevSecOps Security Suite focuses on embedding security into every phase of the software development lifecycle. This project utilizes Terraform to set up and manage infrastructure on AWS, integrates multiple security tools into a Jenkins CI/CD pipeline, and ensures compliance and security through automated checks and balances.
+
+GuardianX is the first step in our University project and has been created with the intent to deploy it in the [DevSecOps Security Suite project](https://github.com/mella7/DevSecOps-Security-Suite) (which is part 2 of the University project).
+
 
 ### Key Features
 
