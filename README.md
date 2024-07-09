@@ -1,6 +1,7 @@
 # GuardianX
 
-This project is a part of my University project, where I'm focusing on a secure DevSecOps deployment.
+This project was created by team MHAF as a part of our University project, where we're focusing on a secure DevSecOps deployment.
+#MHAF: M = Med Ali Mellah, H = Hyba Ayeshi, A = Ala Eddine Largat, F = Fyras Mabrouki
 
 ## Project Name: DevSecOps Security Suite
 
