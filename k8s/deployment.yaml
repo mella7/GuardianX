@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guardianx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: guardianx
+  template:
+    metadata:
+      labels:
+        app: guardianx
+    spec:
+      containers:
+      - name: guardianx
+        image: your-dockerhub-username/guardianx:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: AUTH0_CLIENT_ID
+          valueFrom:
+            secretKeyRef:
+              name: auth0-secrets
+              key: client_id
+        - name: AUTH0_CLIENT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: auth0-secrets
+              key: client_secret
+        - name: VIRUSTOTAL_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: virustotal-secrets
+              key: api_key

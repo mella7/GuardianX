@@ -1,0 +1,17 @@
+#apiVersion: v1
+#kind: ConfigMap
+#metadata:
+#  name: guardianx-config
+#data:
+#  FLASK_ENV: "development"
+#  AUTH0_DOMAIN: "dev-fq0ukwbcuwnxw6ua.eu.auth0.com"
+#  AUTH0_CLIENT_ID: "mqBIQePulESPYdyKyjr8I9FWpAAkDa6r"
+#  AUTH0_CLIENT_SECRET: "NbrXJ9NGDpisB5uFTU5HdnFPLWZfSSCQ-i6sPIgyoSFMH3BU8hTkeGy3z2eTybPX"
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: dev
+data:
+  LOG_LEVEL: "DEBUG"
