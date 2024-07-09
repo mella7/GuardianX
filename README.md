@@ -96,3 +96,21 @@ Follow these steps to install and set up the GuardianX application:
 2. **Clone the repository:** Use Git to clone the GuardianX repository to your local machine.
    ```bash
    git clone https://github.com/mella7/GuardianX.git
+3. **Install dependencies:** Navigate to the project directory and install the required Python packages using pip.
+   ```bash
+   cd GuardianX
+   pip install -r requirements.txt
+4. **Set up environment variables:** Create a .env file in the project directory and add your API keys and other sensitive information.
+   ```bash  
+   VIRUSTOTAL_API_KEY=your_virustotal_api_key
+   AUTH0_CLIENT_ID=your_auth0_client_id
+   AUTH0_CLIENT_SECRET=your_auth0_client_secret
+   AUTH0_DOMAIN=your_auth0_domain
+   SECRET_KEY=your_secret_key
+   AUTH0_CALLBACK_URL=your_auth0_callback_url
+5. **Run the application:** Start the Flask development server to run the GuardianX application.
+   ```bash
+   python app.py
+6. **Access the application:** Open your web browser and navigate to http://localhost:5000 to access the GuardianX application.
+
+ 
